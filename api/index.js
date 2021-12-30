@@ -1,4 +1,4 @@
-var express = require('express');
+ar express = require('express');
 var r = express.Router();
 
 // load pre-trained model
@@ -7,7 +7,7 @@ const cls_model = require('./sdk/cls_model.js'); // cls
 
 // Bot Setting
 const TelegramBot = require('node-telegram-bot-api');
-const token = '5017636993:AAGRE6Xl94vt-H7XdLRQiHOyUNAuj-EQVvo'
+const token = '5082522912:AAGAA6nALJ1WsX9wJOUZj_lkZLP9f-qyi28'
 const bot = new TelegramBot(token, {polling: true});
 
 state = 0;
@@ -123,4 +123,3 @@ r.get('/classify/:i/:r', function(req, res, next) {
 });
 
 module.exports = r;
-
